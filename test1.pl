@@ -197,5 +197,31 @@ use autodie;
 #chomp(my $name =<STDIN>); #chomp去掉<STDIN>的\n
 #print "姓名是$name的最后名字是$name{$name}\n"; #第一个name指哈希名name 第二个name指变量$name
 
-
 #---------------------------------
+
+#my(@words, %count, $word);
+#chomp(@words=<STDIN>);
+#
+#foreach $word (@words){  # 哈希%count中 值count{$word} 最开始的是undef 当要+1是 自动改为0 
+#	$count{$word}+=1;
+#}
+#
+#foreach $word (sort (keys %count)){
+#	print "$word 出现次数是:$count{$word}\n";
+#}
+
+#------------------------------------
+
+my $lengthest = 0;
+
+#得出所有中key最长的字符
+foreach my $keys ( keys %ENV ){
+	my $key_length = length($keys);
+	$lengthest = $key_length if $key_length > $lengthest;
+}
+
+#遍历ENV 让最长字符作为格式化字符输入 
+foreach my $keys( keys %ENV){
+	printf "%-${lengthest}s => %s\n" ,$keys, $ENV{$keys};
+	
+}
