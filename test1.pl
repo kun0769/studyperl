@@ -197,5 +197,16 @@ use autodie;
 #chomp(my $name =<STDIN>); #chomp去掉<STDIN>的\n
 #print "姓名是$name的最后名字是$name{$name}\n"; #第一个name指哈希名name 第二个name指变量$name
 
-
 #---------------------------------
+
+#my(@words, %count, $word);
+#chomp(@words=<STDIN>);
+#
+#foreach $word (@words){  # 哈希%count中 值count{$word} 最开始的是undef 当要+1是 自动改为0 
+#	$count{$word}+=1;
+#}
+#
+#foreach $word (sort (keys %count)){
+#	print "$word 出现次数是:$count{$word}\n";
+#}
+
