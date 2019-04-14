@@ -225,8 +225,8 @@ use autodie;
 #foreach my $keys( keys %ENV){
 #	printf "%-${lengthest}s => %s\n" ,$keys, $ENV{$keys};
 #	
-#}
 
+#}
 
 #--------------------------------------
 
@@ -257,4 +257,7 @@ if(/doo./){  #.表示匹配除换行符之外的任意单个字符
 }
 else{
 	print "\tDoesn't match\n";
+	}
 }
+
+
