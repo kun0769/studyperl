@@ -210,18 +210,3 @@ use autodie;
 #	print "$word 出现次数是:$count{$word}\n";
 #}
 
-#------------------------------------
-
-#my $lengthest = 0;
-#
-##得出所有中key最长的字符
-#foreach my $keys ( keys %ENV ){
-#	my $key_length = length($keys);
-#	$lengthest = $key_length if $key_length > $lengthest;
-#}
-#
-##遍历ENV 让最长字符作为格式化字符输入 
-#foreach my $keys( keys %ENV){
-#	printf "%-${lengthest}s => %s\n" ,$keys, $ENV{$keys};
-#	
-#}
