@@ -286,6 +286,7 @@ use autodie;
 #	print "\tDoesn't match\n";
 #	}
 
+
 # |表示或 要么左边 要么右边 ( |\t)+ 表示要么1个到多个空格 要么1个到多个\t
 #$_ = "aa";
 #if(/( |\t)+aa/){ 
