@@ -250,14 +250,39 @@ use autodie;
 #	}
 #}
 
+#.和\N表示匹配除换行符之外的任意单个字符
+#$_ = "yabba dabba doo!";
+#if(/doo./){  
+#	print "\tMatch\n";
+#}
+#else{
+#	print "\tDoesn't match\n";
+#	}
 
-$_ = "yabba dabba doo!";
-if(/doo./){  #.表示匹配除换行符之外的任意单个字符
-	print "\tMatch\n";
-}
-else{
-	print "\tDoesn't match\n";
-	}
+#b{2}表示匹配b出现2次  等于bb	
+#$_ = "yabba dabbna doo!";
+#if(/ab{2}a/){  
+#	print "\tMatch\n";
+#}
+#else{
+#	print "\tDoesn't match\n";
+#	}
 
+#(.)\1 匹配两个连续出现同样的字符
+#$_ = "yabba da1a doafo!";
+#if(/a(.)\1a/){ 
+#	print "\tMatch\n";
+#}
+#else{
+#	print "\tDoesn't match\n";
+#	}
 
+#\g{-1} 等于 \-1 离他左边最进一个分组
+#$_ = "xax11bb";
+#if(/(.)(.)\g{-1}11/){ 
+#	print "\tMatch\n";
+#}
+#else{
+#	print "\tDoesn't match\n";
+#	}
 
