@@ -210,3 +210,51 @@ use autodie;
 #	print "$word 出现次数是:$count{$word}\n";
 #}
 
+
+#------------------------------------
+
+#my $lengthest = 0;
+#
+##得出所有中key最长的字符
+#foreach my $keys ( keys %ENV ){
+#	my $key_length = length($keys);
+#	$lengthest = $key_length if $key_length > $lengthest;
+#}
+#
+##遍历ENV 让最长字符作为格式化字符输入 
+#foreach my $keys( keys %ENV){
+#	printf "%-${lengthest}s => %s\n" ,$keys, $ENV{$keys};
+#	
+#}
+
+
+#--------------------------------------
+
+#while (<STDIN>){
+#	chomp;
+#	if (/fred/){ #匹配fred
+#		print "\tMatches\n";
+#	}
+#	else{
+#		print "\tDoesn't match\n";
+#	}
+#}
+#
+#while (<STDIN>){
+#	chomp;
+#	if (/ARGV[0]/){ #根据第一个参数来匹配
+#		print "\tMatches\n";
+#	}
+#	else{
+#		print "\tDoesn't match\n";
+#	}
+#}
+
+
+$_ = "yabba dabba doo!";
+if(/doo./){  #.表示匹配除换行符之外的任意单个字符
+	print "\tMatch\n";
+}
+else{
+	print "\tDoesn't match\n";
+}
