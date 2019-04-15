@@ -300,3 +300,13 @@ use autodie;
 #while (<STDIN>){
 #	print "$_\n" if /\.png\Z/;
 #}
+
+
+#open FILE, "/root/test.txt";
+#
+#while (<FILE>){
+#    chomp;
+#	if (/(\S)\1/){
+#		print "$_\n";
+#	}
+#}
