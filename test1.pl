@@ -324,3 +324,8 @@ use autodie;
 #if("Hello there, neighbor" =~ /\s(\w+),/){
 #	print "That was ($`)($&)($')\n";
 #}
+
+##也可以使用/p修饰符来来代替默认的自动捕获变量 分别是 ${^PREMATCH}${^MATCH}${^POSTMATCH}
+#if("Hello there, neighbor" =~ /\s(\w+),/p){
+#	print "That was ${^PREMATCH}${^MATCH}${^POSTMATCH}\n";
+#}
