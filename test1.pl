@@ -310,3 +310,10 @@ use autodie;
 #		print "$_\n";
 #	}
 #}
+
+
+##(?<label>) 为捕获组却名为label，值存放在%+中 key是label名  值是$+{label} (?:)是禁止使用捕获模式
+#my $names ='Fred or Barney';
+#if($names =~ m/(?<name1>\w+) (?:or|and) (?<name2>\w+)/){
+#	print "I saw $+{name1} and $+{name2}";    #$+{name1}是特殊哈希%+中key名name1的值 就是Fred
+#}
