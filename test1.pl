@@ -317,3 +317,10 @@ use autodie;
 #if($names =~ m/(?<name1>\w+) (?:or|and) (?<name2>\w+)/){
 #	print "I saw $+{name1} and $+{name2}";    #$+{name1}是特殊哈希%+中key名name1的值 就是Fred
 #}
+
+
+
+##三个特殊的自动捕获变量  $&指捕获匹配到的内容        $`指匹配到的内容前的内容      $'指匹配到的内容后的内容
+#if("Hello there, neighbor" =~ /\s(\w+),/){
+#	print "That was ($`)($&)($')\n";
+#}
