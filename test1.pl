@@ -374,4 +374,13 @@ use autodie;
 #}
 
 
+#while (<>){
+#    chomp;
+#    if(/(\A\w*\s\z)/){
+#       print "$1*\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
 
