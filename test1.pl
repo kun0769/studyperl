@@ -390,4 +390,18 @@ use autodie;
 # 替换字符为大写 \U把后面所有字符转为大写  i搜索时忽略消大小写
 #$_ = "I saw Barney with Fred.";
 #s/(fred|barney)/\U$1/gi;
-#print $_;
+#print "$_\n";
+#
+#s/(fred|barney)/\L$1/gi;
+#print "$_\n";
+#
+#s/(\w+) with (\w+)/\U$2\E with $1/;
+#print "$_\n";
+#
+#s/(fred|barney)/\l$1/gi;
+#print "$_\n";
+#
+##\u\L 表示首字母大写，后续字符都是小写
+#s/(fred|barney)/\u\L$1/gi;
+#print "$_\n";
+
