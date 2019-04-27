@@ -329,3 +329,49 @@ use autodie;
 #if("Hello there, neighbor" =~ /\s(\w+),/p){
 #	print "That was ${^PREMATCH}${^MATCH}${^POSTMATCH}\n";
 #}
+
+#----------------------------------------
+#查看字符串的模式匹配位置
+
+#my $match ="beformatchfter";
+#if($match =~ /match/){
+#	print "Matched: |$`<$&>$'|\n";
+#}
+#else{
+#	print "No Match: |$_|\n";
+#}
+
+#单位以a结尾的单词
+#while (<>){
+#    chomp;
+#    if(/\b(\w+)a\b/){
+#       print "Matched: |$`<$&>$'|\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+#while (<>){
+#    chomp;
+#    if(/(?<word>\b\w*a\b)/){
+#       print "'word' contains '$+{word}'\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+##匹配以a结尾的单词和其后5位的字符
+#while (<>){
+#    chomp;
+#    if(/(?<word>\b\w*a\b)(?<word2>.{0,5})/){
+#       print "'word' contains '$+{word}' '$+{word2}'\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+
+
