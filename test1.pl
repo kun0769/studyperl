@@ -405,3 +405,9 @@ use autodie;
 #s/(fred|barney)/\u\L$1/gi;
 #print "$_\n";
 
+#split /·Ö¸ô·û/, ×Ö·û´® ·Ö¸î×Ö·û´®     join Á¬½Ó×Ö·û , ×Ö·û´®   Á¬½Ó×Ö·û´®
+#my $x = "2:4:6:8:10";
+#my @y = split /:/, $x;
+#print "@y\n";
+#my @z = join "-", @y;
+#print "@z\n";
