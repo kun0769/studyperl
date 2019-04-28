@@ -411,3 +411,11 @@ use autodie;
 #print "@y\n";
 #my @z = join "-", @y;
 #print "@z\n";
+
+
+#--------------------------------------
+#my $test ="Barney Rubby Fred Flinstone Wilma Filesish";
+#my %last_name = ($test =~ /(\w+)\s+(\w+)/gi);
+#foreach (keys %last_name){
+#	print " $_ ==> $last_name{$_}\n";
+#}
