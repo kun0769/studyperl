@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 #批量添加版权
 
+use utf8;
 use warnings;
 use strict;
 
