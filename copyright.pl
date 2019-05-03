@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+#批量添加版权
 
 use warnings;
 use strict;
