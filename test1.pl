@@ -330,3 +330,118 @@ use autodie;
 #	print "That was ${^PREMATCH}${^MATCH}${^POSTMATCH}\n";
 #}
 
+<<<<<<< HEAD
+=======
+#----------------------------------------
+#查看字符串的模式匹配位置
+
+#my $match ="beformatchfter";
+#if($match =~ /match/){
+#	print "Matched: |$`<$&>$'|\n";
+#}
+#else{
+#	print "No Match: |$_|\n";
+#}
+
+#单位以a结尾的单词
+#while (<>){
+#    chomp;
+#    if(/\b(\w+)a\b/){
+#       print "Matched: |$`<$&>$'|\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+#while (<>){
+#    chomp;
+#    if(/(?<word>\b\w*a\b)/){
+#       print "'word' contains '$+{word}'\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+##匹配以a结尾的单词和其后5位的字符
+#while (<>){
+#    chomp;
+#    if(/(?<word>\b\w*a\b)(?<word2>.{0,5})/){
+#       print "'word' contains '$+{word}' '$+{word2}'\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+
+#while (<>){
+#    chomp;
+#    if(/(\A\w*\s\z)/){
+#       print "$1*\n";
+#    }   
+#    else{
+#       print "No Match: |$_|\n";
+#    }   
+#}
+
+
+#-------------------------------------
+
+# 替换字符为大写 \U把后面所有字符转为大写  i搜索时忽略消大小写
+#$_ = "I saw Barney with Fred.";
+#s/(fred|barney)/\U$1/gi;
+#print "$_\n";
+#
+#s/(fred|barney)/\L$1/gi;
+#print "$_\n";
+#
+#s/(\w+) with (\w+)/\U$2\E with $1/;
+#print "$_\n";
+#
+#s/(fred|barney)/\l$1/gi;
+#print "$_\n";
+#
+##\u\L 表示首字母大写，后续字符都是小写
+#s/(fred|barney)/\u\L$1/gi;
+#print "$_\n";
+
+#split /分隔符/, 字符串 分割字符串     join 连接字符 , 字符串   连接字符串
+#my $x = "2:4:6:8:10";
+#my @y = split /:/, $x;
+#print "@y\n";
+#my @z = join "-", @y;
+#print "@z\n";
+
+
+#--------------------------------------
+#my $test ="Barney Rubby Fred Flinstone Wilma Filesish";
+#my %last_name = ($test =~ /(\w+)\s+(\w+)/gi);
+#foreach (keys %last_name){
+#	print " $_ ==> $last_name{$_}\n";
+#}
+
+
+#my $in = $ARGV[0];
+#if(! defined $in){
+#	die "Usage: $0 filename";
+#}
+#
+#my $out = $in;
+#$out =~ s/(\.\w+)?$/.out/;
+#
+#if(! open my $in_fh, '<', $in){
+#	die "Can't open '$in': $!";
+#}
+#
+#if(! open my $out_fh, '>', $out){
+#	die "Can't write '$out': $!";
+#}
+#
+#while(<$in_fh>){
+#	s/Fred/Larry/ig;
+#	print $out_fh $_;
+#}
+
+>>>>>>> branch 'master' of https://github.com/kun0769/studyperl.git
