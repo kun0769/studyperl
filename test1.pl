@@ -330,8 +330,7 @@ use autodie;
 #	print "That was ${^PREMATCH}${^MATCH}${^POSTMATCH}\n";
 #}
 
-<<<<<<< HEAD
-=======
+
 #----------------------------------------
 #查看字符串的模式匹配位置
 
@@ -443,5 +442,3 @@ use autodie;
 #	s/Fred/Larry/ig;
 #	print $out_fh $_;
 #}
-
->>>>>>> branch 'master' of https://github.com/kun0769/studyperl.git
